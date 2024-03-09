@@ -1013,15 +1013,27 @@ section {
   }
 }
 .footer-social{
-  margin-left: 550px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+.footer-social h4 {
+  margin-bottom: 10px;
+}
+.footer-social-para {
+  margin-bottom: 20px;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+}
+.socials a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #eb5d1e;
+  font-size: 30px;
+  text-decoration: none;
 }
 .footer-end{
-  margin-left: 505px;
+  text-align: center;
 }
-#footer-social-para{
-margin-left: 35px;
-}
-.socials{
-  margin-left: 55px;
-  font-size: 30px;
- }
