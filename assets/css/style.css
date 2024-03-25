@@ -1,6 +1,6 @@
 /**
 * Template Name: Ninestars
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
+* Updated: Jan 29 2024 with Bootstrap v53.2
 * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -9,6 +9,32 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+:root{
+  --primary:#fef8f5;
+  --secondary:#fff;
+  --logo:#7a6960; 
+  --heading:#4e4039; 
+  --icon-box-background:#fff;
+
+}
+
+.dark-theme-js{
+  --primary:#000106;      /* #hero , .section-bg , #footer , #footer.footer-newsletter */
+  --secondary:#212121;    /* .back-to-top i , .back-to-top:hover , #header , .navbar .getstarted, .navbar .getstarted:focus , .navbar .getstarted:hover, .navbar .getstarted:focus:hover , .navbar .dropdown ul ,.mobile-nav-toggle.bi-x */
+  --logo:#fcfbfa;         /* main-logo , toggle ,about->h4(commented), contact->info->h4(commented) ,navbar-mobile a:focus */
+  --heading:#fcfbfb;      /* navbar->a , #hero->h1 , section-title->p , about h3 , footer .footer-newsletter h4 */
+
+  .heading-community-partner{
+    color: whitesmoke;
+  }
+
+  .copyright{
+    color: whitesmoke;
+  }
+
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #212529;
@@ -53,13 +79,13 @@ h6,
 
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: #ee7843;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
 }
 
 .back-to-top.active {
@@ -84,7 +110,7 @@ h6,
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #fff;
+  background: var(--secondary);       /*var(--secondary) is used*/
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -98,7 +124,7 @@ h6,
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #7a6960;
+  color: var(--logo);         /* var(--logo) is used*/
   text-decoration: none;
 }
 
@@ -141,7 +167,7 @@ h6,
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  color: #4e4039;
+  color: var(--heading);      /*var(--heading) is used */
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -163,7 +189,7 @@ h6,
 .navbar .getstarted,
 .navbar .getstarted:focus {
   background: #eb5d1e;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   padding: 10px 25px;
   margin-left: 30px;
   border-radius: 50px;
@@ -171,7 +197,7 @@ h6,
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   background: #ee7843;
 }
 
@@ -185,7 +211,7 @@ h6,
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: var(--secondary);       /*var(--secondary) is used*/
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -243,7 +269,7 @@ h6,
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #7a6960;
+  color: var(--logo);       /* var(--logo) is used*/
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -252,7 +278,7 @@ h6,
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
 }
 
 @media (max-width: 991px) {
@@ -291,7 +317,7 @@ h6,
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: var(--secondary);       /*var(--secondary) is used*/
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -300,7 +326,7 @@ h6,
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #7a6960;
+  color: var(--logo);       /* var(--logo) is used*/
 }
 
 .navbar-mobile a:hover,
@@ -322,7 +348,7 @@ h6,
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: var(--secondary);       /*var(--secondary) is used*/
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -354,7 +380,7 @@ h6,
 #hero {
   width: 100%;
   height: 70vh;
-  background: #fef8f5;
+  background: var(--primary);       /* var(--primary) is used */
   border-bottom: 2px solid #fcebe3;
   margin: 72px 0 -72px 0;
 }
@@ -364,7 +390,7 @@ h6,
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #4e4039;
+  color: var(--heading);        /*var(--heading) is used */
 }
 
 #hero h2 {
@@ -383,7 +409,7 @@ h6,
   border-radius: 3px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   background: #eb5d1e;
 }
 
@@ -460,7 +486,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fef8f5;
+  background-color: var(--primary);       /* var(--primary) is used */
 }
 
 .section-title {
@@ -483,7 +509,7 @@ section {
   position: relative;
   font-size: 32px;
   font-weight: 700;
-  color: #4e4039;
+  color: var(--heading);        /*var(--heading) is used */
 }
 
 .section-title p::after {
@@ -548,17 +574,22 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.about{
+  background-color: var(--secondary);       /*var(--secondary) is used*/
+}
+
 .about h3 {
   font-weight: 700;
   font-size: 34px;
-  color: #4e4039;
+  color: var(--heading);        /*var(--heading) is used */
 }
 
 .about h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
-  color: #7a6960;
+  color: var(--logo);       /* var(--logo) is used*/
 }
 
 .about i {
@@ -592,12 +623,12 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0 0 40px 0;
-  background: #fff;
+  background: var(--icon-box-background);
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   text-align: center;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid var(--secondary);        /*var(--secondary) is used*/
 }
 
 .services .icon-box:hover {
@@ -705,7 +736,7 @@ section {
   color: #eb5d1e;
   margin: 0 4px;
   line-height: 0;
-  background-color: #fff;
+  background-color: var(--secondary);       /*var(--secondary) is used*/
   padding-top: 6px;
   padding-right: 1px;
   border-radius: 50px;
@@ -723,7 +754,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: #eb5d1e;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -739,7 +770,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   font-weight: 600;
 }
 
@@ -785,7 +816,7 @@ section {
   .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: var(--secondary);       /*var(--secondary) is used*/
   opacity: 1;
   border: 1px solid #eb5d1e;
 }
@@ -904,7 +935,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: var(--secondary);       /*var(--secondary) is used*/
   padding: 60px 0;
 }
 
@@ -938,14 +969,14 @@ section {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
-  color: #fff;
+  color: var(--secondary);          /*var(--secondary) is used*/
 }
 
 .team .member .member-info-content span {
   font-style: italic;
   display: block;
   font-size: 13px;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
 }
 
 .team .member .social {
@@ -962,7 +993,7 @@ section {
 .team .member .social a {
   transition: color 0.3s;
   display: block;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   margin-top: 15px;
 }
 
@@ -1016,7 +1047,7 @@ section {
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: var(--secondary);       /*var(--secondary) is used*/
   opacity: 1;
   border: 1px solid #eb5d1e;
 }
@@ -1032,7 +1063,7 @@ section {
   border-top: 3px solid #eb5d1e;
   border-bottom: 3px solid #eb5d1e;
   padding: 30px;
-  background: #fff;
+  background: var(--secondary);       /*var(--secondary) is used*/
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -1056,7 +1087,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #7a6960;
+  color: var(--logo);       /* var(--logo) is used*/
 }
 
 .contact .info p {
@@ -1078,7 +1109,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #333;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
@@ -1091,14 +1122,14 @@ section {
 
 .contact .info .social-links a:hover {
   background: #eb5d1e;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: #eb5d1e;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
 }
 
 .contact .php-email-form {
@@ -1106,7 +1137,7 @@ section {
   border-top: 3px solid #eb5d1e;
   border-bottom: 3px solid #eb5d1e;
   padding: 30px;
-  background: #fff;
+  background: var(--secondary);       /*var(--secondary) is used*/
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -1116,7 +1147,7 @@ section {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1129,7 +1160,7 @@ section {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1138,7 +1169,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: var(--secondary);       /*var(--secondary) is used*/
   text-align: center;
   padding: 15px;
 }
@@ -1174,7 +1205,7 @@ section {
   background: #eb5d1e;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   transition: 0.4s;
   border-radius: 4px;
 }
@@ -1197,16 +1228,16 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  background: var(--secondary);       /*var(--secondary) is used*/
   /* padding: 0 0 30px 0; */
   color: #212529;
   font-size: 14px;
-  background: #fef8f5;
+  background: var(--primary);       /* var(--primary) is used */
 }
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #fef8f5;
+  background: var(--primary);       /* var(--primary) is used */
   text-align: center;
   font-size: 15px;
 }
@@ -1217,12 +1248,12 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #4e4039;
+  color: var(--heading);        /*var(--heading) is used */
 }
 
 #footer .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: var(--secondary);       /*var(--secondary) is used*/
   padding: 6px 10px;
   position: relative;
   border-radius: 4px;
@@ -1246,7 +1277,7 @@ section {
   font-size: 16px;
   padding: 0 20px;
   background: #eb5d1e;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   transition: 0.3s;
   border-radius: 4px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1332,7 +1363,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #eb5d1e;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1345,7 +1376,7 @@ section {
 
 #footer .footer-top .social-links a:hover {
   background: #ef7f4d;
-  color: #fff;
+  color: var(--secondary);        /*var(--secondary) is used*/
   text-decoration: none;
 }
 
@@ -1400,4 +1431,13 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+/* dark theme */
+
+#dark{
+  height: 25px;
+  cursor: pointer;
+  padding-right: 20px;
 }
