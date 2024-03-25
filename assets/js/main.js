@@ -236,3 +236,16 @@
   });
 
 })()
+
+/* ---Dark Theme--- */
+
+var dark = document.getElementById("dark");
+dark.onclick = function(){
+  document.body.classList.toggle("dark-theme-js");
+  if(document.body.classList.contains("dark-theme-js")){
+    dark.src = "./assets/img/sun.png";
+  }
+  else{
+    dark.src = "./assets/img/moon.png";
+  }
+}
