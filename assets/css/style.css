@@ -383,6 +383,7 @@ h6,
   background: var(--primary);       /* var(--primary) is used */
   border-bottom: 2px solid #fcebe3;
   margin: 72px 0 -72px 0;
+  min-height: 100vh;
 }
 
 #hero h1 {
