@@ -586,6 +586,13 @@ section {
   color: var(--heading);        /*var(--heading) is used */
 }
 
+.span-h3-
+{
+  font-weight: 700;
+  font-size: 34px;
+  color: #eb5d1e;  
+}
+
 .about h4 {
   font-size: 20px;
   font-weight: 700;
